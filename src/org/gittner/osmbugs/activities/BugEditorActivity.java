@@ -146,6 +146,12 @@ public class BugEditorActivity extends SherlockActivity{
     }
 
     @Override
+	protected void onSaveInstanceState(Bundle outState) {
+		// TODO Auto-generated method stub
+		super.onSaveInstanceState(outState);
+	}
+
+	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         menu_ = menu;
         getSupportMenuInflater().inflate(R.menu.bug_editor, menu);
